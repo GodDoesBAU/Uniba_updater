@@ -1,0 +1,1 @@
+{'materia': 'Matematica', 'link': 'https://www.dm.uniba.it/members/lotta/matematica-discreta-a-l-a-a-2022-23/lotta_md_2022.pdf/view', 'Xpath_elemento': '/html/body/div[3]/div[3]/main/div[2]/div/div/article/div[2]/p/a'}
