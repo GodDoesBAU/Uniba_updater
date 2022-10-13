@@ -83,11 +83,12 @@ def scarica_appunti(username,materia,link,Xpath_elemento,timeout):
         print("Qualquadra non cosa")
 
 def rimuovo_appunti_vecchi(username,materia,regex=None):
-    if(os.path.exists(materia)):
-        oldfiles=shell_output(['ls', materia],regex)
+    path="/home/"+username+"/Documents/"+materia
+    if(os.path.exists(path)):
+        oldfiles=shell_output(['ls',path],regex)
         if(len(oldfiles)>0):
             for file in oldfiles:
-                subprocess.run(['rm', materia+'/'+file])
+                subprocess.run(['rm', path+'/'+file])
             print("Gli appunti vecchi sono stati rimossi")
 
 user=os.environ.copy()['USER']
